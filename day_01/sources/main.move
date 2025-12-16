@@ -17,6 +17,9 @@ module challenge::day_01 {
     // const MY_ADDRESS: address = @0x1;
     //
     // Remember: Constants must be named in UPPERCASE!
+    const MY_NUMBER: u64 = 21;
+    const BOOLEAN: bool = true;
+    const ADDRESS_MY: address = @0x2;
 
 }
 
