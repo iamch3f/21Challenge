@@ -14,11 +14,19 @@ module challenge::day_02 {
     // public fun sum(a: u64, b: u64): u64 {
     //     // Your code here
     // }
+    public fun sum(a: u64, b: u64): u64 {
+        a + b
+    }
 
     // TODO: Write a test function that checks sum(1, 2) == 3
     // #[test]
     // fun test_sum() {
     //     // Your code here
     // }
+    fun test_sum() {
+
+        assert_eq!(sum(1, 2), 3);
+
+    }
 }
 
