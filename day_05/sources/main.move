@@ -45,5 +45,12 @@ module challenge::day_05 {
     //     // Your code here
     //     // Hint: if (index < length) { ... }
     // }
+    public fun complete_habit(list: &mut HabitList, index: u64) {
+        let len = vector::length(&list.habits);
+        if (index < len) {
+            let habit = vector::borrow_mut(&mut list.habits, index);
+            habit.completed = true;
+        }
+    }
 }
 
